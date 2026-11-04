@@ -93,6 +93,47 @@ span {
     animation: glow 0.6s infinite alternate;
 }
 
+.square {
+    user-select: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.square:hover {
+    background: #e94560;
+    transform: translateY(-3px);
+}
+
+.square:active {
+    transform: scale(0.95);
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    clear: both;
+}
+
+.actions button {
+    padding: 15px 15px;
+    margin: 30px;
+    border: none;
+    border-radius: 8px;
+    background: #eb2525;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.actions button:hover {
+    transform: translateY(-3px);
+    background: #d54545;
+}
+
+
+
 /* Animation */
 @keyframes glow {
     from {

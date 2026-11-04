@@ -72,3 +72,17 @@ function game(id)
     }
     winner();
 }
+function restartGame() {
+
+    const squares = document.querySelectorAll(".square");
+
+    squares.forEach((square) => {
+        square.textContent = "";
+        square.classList.remove("win");
+    });
+
+    currentPlayer = "X";
+    gameOver = false;
+
+    updateStatus();
+}
